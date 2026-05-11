@@ -101,6 +101,62 @@
     </div>
   </div>
 </section>
+  <section class="section" id="certificates">
+  <div class="s-label fade-up">Credentials</div>
+  <h2 class="s-title fade-up">Programming Hub Certificates</h2>
+
+  <div class="cert-search-wrap fade-up">
+    <span class="search-icon">🔎</span>
+    <input
+      type="text"
+      id="certSearch"
+      class="cert-search"
+      placeholder="Search certificates..."
+      oninput="filterCerts()"
+    >
+  </div>
+
+  <div class="cert-filter fade-up">
+    <button class="filter-btn active" onclick="filterCategory(this, 'all')">All</button>
+    <button class="filter-btn" onclick="filterCategory(this, 'Programming Languages')">Programming</button>
+    <button class="filter-btn" onclick="filterCategory(this, 'Web Development')">Web Dev</button>
+    <button class="filter-btn" onclick="filterCategory(this, 'Mobile App Dev')">Mobile</button>
+    <button class="filter-btn" onclick="filterCategory(this, 'Databases')">Databases</button>
+    <button class="filter-btn" onclick="filterCategory(this, 'AI Data Science')">AI/ML</button>
+  </div>
+
+  <div id="certContainer">
+    <div class="cert-category fade-up" data-category="Programming Languages">
+      <div class="cert-cat-header">
+        <span class="cert-cat-icon">📘</span>
+        <span class="cert-cat-name">Programming Languages</span>
+        <span class="cert-cat-count">3</span>
+      </div>
+      <div class="cert-grid">
+        <div class="cert-card" data-category="Programming Languages" data-name="python">
+          <div class="cert-name">Python</div>
+          <div class="cert-date">Jun 21, 2022</div>
+          <div class="cert-id">1655757698780</div>
+          <a href="https://www.programminghub.io/certificate?id=1655757698780" target="_blank" class="cert-verify">Verify Certificate</a>
+        </div>
+
+        <div class="cert-card" data-category="Programming Languages" data-name="java">
+          <div class="cert-name">Java</div>
+          <div class="cert-date">Jun 28, 2024</div>
+          <div class="cert-id">1719559722183</div>
+          <a href="https://www.programminghub.io/certificate?id=1719559722183" target="_blank" class="cert-verify">Verify Certificate</a>
+        </div>
+
+        <div class="cert-card" data-category="Programming Languages" data-name="javascript">
+          <div class="cert-name">JavaScript</div>
+          <div class="cert-date">Jun 28, 2024</div>
+          <div class="cert-id">1719559763175</div>
+          <a href="https://www.programminghub.io/certificate?id=1719559763175" target="_blank" class="cert-verify">Verify Certificate</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
 
 <section id="certifications" class="section-pad bg-dim">
   <div class="container">
